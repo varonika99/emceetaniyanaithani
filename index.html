@@ -3,128 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Emcee Taniya Naithani - Premium Anchor for Events, Weddings & Corporate Shows">
+  <meta name="keywords" content="Emcee, Anchor, Taniya Naithani, Wedding Host, Event Anchor, Corporate Events">
+  <meta name="author" content="Taniya Naithani">
   <title>Emcee Taniya Naithani</title>
-  <meta name="description" content="Taniya Naithani – Dynamic Anchor, Host, and Performer for weddings, corporate events, fashion shows and more." />
-  <meta name="theme-color" content="#3e2f5b" />
 
-  <!-- Favicon and Touch Icons -->
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="icons/icon-48x48.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="icons/icon-64x64.png">
-  <link rel="icon" type="image/png" sizes="128x128" href="icons/icon-128x128.png">
-  <link rel="icon" type="image/png" sizes="256x256" href="icons/icon-256x256.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512x512.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180x180.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="icons/icon-152x152.png">
+  <!-- Favicon and Manifest -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="shortcut icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <img src="logo.jpeg" alt="Taniya Naithani Logo" class="logo" />
-    <h1>Emcee Taniya Naithani</h1>
-    <p>Dynamic Anchor | Host | Performer</p>
-    <div class="button-group">
-      <a href="https://g.co/kgs/NDYjDRg" class="button" target="_blank">Google Profile</a>
-      <a href="https://www.instagram.com/taniyanaithani" class="button" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@Emceetaniyanaithani" class="button" target="_blank">YouTube</a>
-      <a href="mailto:booktaniyanaithani@gmail.com" class="button">Book Me</a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_1SfXcB1thkzc97NOLerrTRauQb07Wj1j_i1zTLq3rf-UTg/viewform" class="button" target="_blank">Booking Form</a>
-    </div>
+    <img src="assets/logo.jpeg" alt="Taniya Naithani Logo" class="logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about">
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Emcee Taniya Naithani's World</h1>
+    <p>Crafting Memorable Experiences One Event at a Time</p>
+    <a href="#contact" class="cta-button">Book Now</a>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="about">
     <h2>About Me</h2>
-    <div class="about-text">
-      <!-- Paste your 2000-word biography content here -->
-      <!-- Make sure it's broken into <p>...</p> for readability -->
-      <!-- Already approved text to be formatted in final version -->
-      <p>With an unmistakable stage presence and a voice that captivates every room she enters, Taniya Naithani is a dynamic and versatile Emcee...</p>
-      <!-- continue with more paragraphs as needed -->
+    <p>
+      With over a decade of experience engaging live audiences across India, I, Taniya Naithani, specialize in transforming events into unforgettable memories. As a premium emcee, I bring elegance, charm, and energy to every stage I step onto. Whether it’s a destination wedding, a high-profile corporate gala, or an entertainment extravaganza, I tailor my approach to your unique event goals. Fluent in Hindi, English, and the universal language of joy, I’ve hosted 500+ events across metros and tier-2 cities alike. My stage presence is magnetic, professional, and always guest-focused.
+    </p>
+    <p>
+      My clients include industry-leading brands, production houses, wedding planners, and private clients who seek a touch of class and flair in their events. Every show I host is meticulously planned, with attention to flow, tone, audience engagement, and lasting impact. I’m not just an anchor—I am your event’s storyteller, energizer, and curator of unforgettable moments.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <img src="assets/gallery1.jpg" alt="Event 1" />
+      <img src="assets/gallery2.jpg" alt="Event 2" />
+      <img src="assets/gallery3.jpg" alt="Event 3" />
+      <img src="assets/gallery4.jpg" alt="Event 4" />
+      <img src="assets/gallery5.jpg" alt="Event 5" />
+      <img src="assets/gallery6.jpg" alt="Event 6" />
     </div>
   </section>
 
-  <section id="testimonials">
-    <h2>What People Say</h2>
-    <div id="review-box">
-      <blockquote id="testimonial-text"></blockquote>
-      <p id="testimonial-author"></p>
-    </div>
-    <div class="testimonial-controls">
-      <button onclick="prevTestimonial()">‹ Prev</button>
-      <button onclick="nextTestimonial()">Next ›</button>
-    </div>
-  </section>
-
-  <section id="gallery" class="gallery-section">
-    <div class="container">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <!-- Dynamically loaded images will appear here -->
-      </div>
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial-slider">
+      <blockquote>
+        "Taniya was the heart of our event! Energetic, elegant, and totally engaging." – Rohan M.
+      </blockquote>
+      <blockquote>
+        "She knew exactly how to work the crowd. The evening was unforgettable." – Meenal S.
+      </blockquote>
+      <blockquote>
+        "One of the most professional emcees we’ve worked with. Highly recommend!" – Apex Events
+      </blockquote>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Book Taniya</h2>
+    <p>For bookings and collaborations, reach out via:</p>
+    <ul>
+      <li>Email: <a href="mailto:booktaniyanaithani@gmail.com">booktaniyanaithani@gmail.com</a></li>
+      <li>Instagram: <a href="https://instagram.com/taniyanaithani" target="_blank">@taniyanaithani</a></li>
+      <li>YouTube: <a href="https://youtube.com/@taniyanaithani" target="_blank">Watch Videos</a></li>
+      <li>Google Reviews: <a href="https://g.co/kgs/wz6fTex" target="_blank">See Client Feedback</a></li>
+      <li>Booking Form: <a href="https://forms.gle/exampleform" target="_blank">Submit Booking Request</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p class="cta-footer">Want to create unforgettable moments at your next event?<br/>Get in touch with Taniya today!</p>
-    <p>&copy; 2025 Emcee Taniya Naithani. All rights reserved.</p>
+    <p>&copy; 2025 Emcee Taniya Naithani. All Rights Reserved.</p>
   </footer>
 
-  <script>
-    const reviews = [
-      { text: "Taniya is an amazing host! Her energy and professionalism lit up the entire event. Highly recommended!", author: "Pooja Mehra" },
-      { text: "The way she engaged the audience was incredible. Our wedding wouldn’t have been the same without her.", author: "Rahul Sharma" },
-      { text: "Absolutely loved her anchoring at our corporate gala. Classy, energetic, and smooth.", author: "Divya Arora" },
-      { text: "From the moment she took the mic, she had everyone's attention. A true entertainer!", author: "Kunal Singh" },
-      { text: "She brought glamour and grace to our fashion launch. Stellar performance!", author: "Neha Bhatnagar" },
-      { text: "Her confidence and spontaneity made the event truly lively. Taniya is the best emcee I’ve worked with.", author: "Aman Kapoor" },
-      { text: "Taniya made our event seamless and memorable. Her stage presence is unmatched.", author: "Sanya Jain" },
-      { text: "We've hired many hosts, but none compare to the charisma Taniya brings. Simply wow!", author: "Mohit Khurana" },
-      { text: "Excellent delivery, engaging presence, and full of life! She nailed it.", author: "Preeti Sinha" },
-      { text: "Everyone was raving about how great the emcee was! Taniya, you rock!", author: "Ankita Joshi" },
-      { text: "Our product launch was a hit, all thanks to her flair and style on stage.", author: "Ravi Deshmukh" },
-      { text: "She handled the crowd with such ease. Our guests loved her.", author: "Sneha Patel" },
-      { text: "Smooth transitions, witty interactions, and complete crowd control – a true pro!", author: "Deepak Chauhan" },
-      { text: "Taniya was a delight to work with – prompt, polished, and powerful on the mic.", author: "Ritika Verma" },
-      { text: "She made our awards night unforgettable. Truly thankful for her magical touch.", author: "Aditya Goyal" }
-    ];
-
-    let index = 0;
-
-    function showTestimonial(i) {
-      const testimonial = reviews[i];
-      document.getElementById("testimonial-text").textContent = `"${testimonial.text}"`;
-      document.getElementById("testimonial-author").textContent = `– ${testimonial.author}`;
-    }
-
-    function nextTestimonial() {
-      index = (index + 1) % reviews.length;
-      showTestimonial(index);
-    }
-
-    function prevTestimonial() {
-      index = (index - 1 + reviews.length) % reviews.length;
-      showTestimonial(index);
-    }
-
-    setInterval(nextTestimonial, 4000);
-
-    window.onload = () => {
-      showTestimonial(index);
-      const galleryGrid = document.querySelector('.gallery-grid');
-      for (let i = 0; i < 41; i++) {
-        const imgNum = 100 + i;
-        const img = document.createElement('img');
-        img.src = `assets/gallery/taniya${imgNum}.jpg`;
-        img.alt = `Event Photo ${imgNum}`;
-        img.loading = 'lazy';
-        galleryGrid.appendChild(img);
-      }
-    };
-  </script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
