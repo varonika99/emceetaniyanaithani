@@ -1,8 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emcee Taniya Naithani</title>
@@ -21,7 +19,7 @@
       border-bottom: 1px solid #444;
     }
     header img {
-      width: 100px;
+      width: 120px;
       border-radius: 50%;
       margin-bottom: 1em;
     }
@@ -35,20 +33,14 @@
       font-size: 1.1em;
       color: #ccc;
     }
-    section {
-      padding: 2em 10%;
-      border-bottom: 1px solid #333;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      color: gold;
-      font-size: 2em;
+    .button-group {
+      margin-top: 1.5em;
     }
     a.button {
       background-color: gold;
       color: #000;
       padding: 0.7em 1.5em;
-      margin: 1em 0.5em;
+      margin: 0.5em;
       display: inline-block;
       text-decoration: none;
       border-radius: 30px;
@@ -57,13 +49,29 @@
     a.button:hover {
       background-color: #e6c200;
     }
-    .gallery img {
+    section {
+      padding: 2em 10%;
+      border-bottom: 1px solid #333;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: gold;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+    .gallery-grid img {
       width: 30%;
-      margin: 1%;
+      max-width: 300px;
       border-radius: 10px;
       transition: transform 0.3s ease;
     }
-    .gallery img:hover {
+    .gallery-grid img:hover {
       transform: scale(1.05);
     }
     footer {
@@ -73,6 +81,11 @@
       color: #999;
       background-color: #111;
     }
+    @media (max-width: 768px) {
+      .gallery-grid img {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -81,7 +94,7 @@
   <img src="logo.jpeg" alt="Taniya Naithani Logo" />
   <h1>Emcee Taniya Naithani</h1>
   <p>Dynamic Anchor | Host | Performer</p>
-  <div>
+  <div class="button-group">
     <a href="https://g.co/kgs/NDYjDRg" class="button" target="_blank">Google Profile</a>
     <a href="https://www.instagram.com/taniyanaithani" class="button" target="_blank">Instagram</a>
     <a href="https://www.youtube.com/@Emceetaniyanaithani" class="button" target="_blank">YouTube</a>
@@ -90,69 +103,86 @@
   </div>
 </header>
 
-<section>
+<section id="about">
   <h2>About Me</h2>
-  <p>Taniya Naithani is a celebrated emcee and anchor known for her electrifying stage presence and ability to engage audiences of all types. From glamorous weddings to high-energy corporate events and cultural galas, she has hosted hundreds of shows across India and internationally.</p>
-  <p>With a natural flair for storytelling and improvisation, Taniya brings a vibrant charm and unmatched professionalism to every event she hosts. Whether it’s anchoring a fashion show, product launch, or festive celebration, she ensures every moment is memorable for the audience and the organizers alike.</p>
+  <p>
+    With a decade of experience gracing stages across India, I’m Taniya Naithani — a versatile emcee known for transforming events into unforgettable experiences. From corporate galas and brand launches to weddings and award nights, I bring energy, elegance, and seamless professionalism to every gathering.
+  </p>
+  <p>
+    With a strong presence across YouTube, Instagram, and Google Reviews, I ensure your event receives the charisma and confidence it deserves. Whether it’s anchoring a fashion show or emceeing a festive celebration, I create lasting memories for all.
+  </p>
 </section>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Emcee Taniya Naithani</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Emcee Taniya Naithani</h1>
-      <p>Professional Anchor | Event Host | Corporate Emcee</p>
-    </div>
-  </header>
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <!-- Images from taniya100.jpg to taniya140.jpg -->
+    <!-- You must place these 41 images in assets/gallery/ -->
+    <!-- Here is the full loop written out -->
+    <!-- You can remove or keep as needed -->
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        With a decade of experience gracing stages across India, I’m Taniya Naithani — a versatile emcee known for transforming events into unforgettable experiences. From corporate galas and brand launches to weddings and award nights, I bring energy, elegance, and seamless professionalism to every gathering. With a strong presence across YouTube, Instagram, and Google Reviews, I ensure your event receives the charisma and confidence it deserves.
-      </p>
-    </div>
-  </section>
+    <!-- Start of Image Loop -->
+    <!-- Total: 41 images -->
+    <!-- Replace with your own images if needed -->
+    <!-- Each image should be named taniyaXXX.jpg and placed in assets/gallery/ -->
 
-  <section id="gallery" class="gallery-section">
-    <div class="container">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <!-- Image Grid -->
-        <!-- You can add/remove images as per your assets -->
-        <!-- From taniya100.jpg to taniya140.jpg -->
-        <!-- You can batch-generate this with script too -->
+    <!-- Auto-generated for taniya100.jpg to taniya140.jpg -->
+    <!-- Begin Loop -->
+    <!-- You can delete or comment unwanted ones -->
 
-        <!-- Example with 6 images shown below -->
-        <img src="assets/gallery/taniya100.jpg" alt="Taniya Event 1" />
-        <img src="assets/gallery/taniya101.jpg" alt="Taniya Event 2" />
-        <img src="assets/gallery/taniya102.jpg" alt="Taniya Event 3" />
-        <img src="assets/gallery/taniya103.jpg" alt="Taniya Event 4" />
-        <img src="assets/gallery/taniya104.jpg" alt="Taniya Event 5" />
-        <img src="assets/gallery/taniya105.jpg" alt="Taniya Event 6" />
-        <!-- Continue till -->
-        <img src="assets/gallery/taniya140.jpg" alt="Taniya Event 41" />
-      </div>
-    </div>
-  </section>
+    <!-- You may skip rendering all here for speed -->
+    <!-- Sample output -->
+    <!-- Real file would loop like this: -->
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Emcee Taniya Naithani. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
+    <!-- Start Render -->
+    <img src="assets/gallery/taniya100.jpg" alt="Event 100">
+    <img src="assets/gallery/taniya101.jpg" alt="Event 101">
+    <img src="assets/gallery/taniya102.jpg" alt="Event 102">
+    <img src="assets/gallery/taniya103.jpg" alt="Event 103">
+    <img src="assets/gallery/taniya104.jpg" alt="Event 104">
+    <img src="assets/gallery/taniya105.jpg" alt="Event 105">
+    <img src="assets/gallery/taniya106.jpg" alt="Event 106">
+    <img src="assets/gallery/taniya107.jpg" alt="Event 107">
+    <img src="assets/gallery/taniya108.jpg" alt="Event 108">
+    <img src="assets/gallery/taniya109.jpg" alt="Event 109">
+    <img src="assets/gallery/taniya110.jpg" alt="Event 110">
+    <img src="assets/gallery/taniya111.jpg" alt="Event 111">
+    <img src="assets/gallery/taniya112.jpg" alt="Event 112">
+    <img src="assets/gallery/taniya113.jpg" alt="Event 113">
+    <img src="assets/gallery/taniya114.jpg" alt="Event 114">
+    <img src="assets/gallery/taniya115.jpg" alt="Event 115">
+    <img src="assets/gallery/taniya116.jpg" alt="Event 116">
+    <img src="assets/gallery/taniya117.jpg" alt="Event 117">
+    <img src="assets/gallery/taniya118.jpg" alt="Event 118">
+    <img src="assets/gallery/taniya119.jpg" alt="Event 119">
+    <img src="assets/gallery/taniya120.jpg" alt="Event 120">
+    <img src="assets/gallery/taniya121.jpg" alt="Event 121">
+    <img src="assets/gallery/taniya122.jpg" alt="Event 122">
+    <img src="assets/gallery/taniya123.jpg" alt="Event 123">
+    <img src="assets/gallery/taniya124.jpg" alt="Event 124">
+    <img src="assets/gallery/taniya125.jpg" alt="Event 125">
+    <img src="assets/gallery/taniya126.jpg" alt="Event 126">
+    <img src="assets/gallery/taniya127.jpg" alt="Event 127">
+    <img src="assets/gallery/taniya128.jpg" alt="Event 128">
+    <img src="assets/gallery/taniya129.jpg" alt="Event 129">
+    <img src="assets/gallery/taniya130.jpg" alt="Event 130">
+    <img src="assets/gallery/taniya131.jpg" alt="Event 131">
+    <img src="assets/gallery/taniya132.jpg" alt="Event 132">
+    <img src="assets/gallery/taniya133.jpg" alt="Event 133">
+    <img src="assets/gallery/taniya134.jpg" alt="Event 134">
+    <img src="assets/gallery/taniya135.jpg" alt="Event 135">
+    <img src="assets/gallery/taniya136.jpg" alt="Event 136">
+    <img src="assets/gallery/taniya137.jpg" alt="Event 137">
+    <img src="assets/gallery/taniya138.jpg" alt="Event 138">
+    <img src="assets/gallery/taniya139.jpg" alt="Event 139">
+    <img src="assets/gallery/taniya140.jpg" alt="Event 140">
+    <!-- End Render -->
+
+  </div>
+</section>
 
 <footer>
-  &copy; 2025 Emcee Taniya Naithani. All rights reserved.
+  <p>&copy; 2025 Emcee Taniya Naithani. All rights reserved.</p>
 </footer>
 
 </body>
