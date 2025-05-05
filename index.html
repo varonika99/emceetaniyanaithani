@@ -1,206 +1,251 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Book Emcee Taniya Naithani for weddings, corporate events, launches, and more. India's premier anchor with over 1000+ shows hosted.">
-  <meta name="keywords" content="Emcee, Anchor, Taniya Naithani, Event Host, Indian Emcee, Wedding Emcee, Corporate Anchor">
-  <meta name="author" content="Taniya Naithani">
-  <title>Emcee Taniya Naithani</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      background: #fff;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .logo {
-      max-width: 120px;
-      height: auto;
-    }
-    .button-group {
-      margin: 1rem 0;
-    }
-    .button {
-      background: #be2edd;
-      color: white;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      margin: 0.3rem;
-      border-radius: 25px;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-    .button:hover {
-      background: #9b1cc3;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    #testimonials {
-      text-align: center;
-      background: #f9f5ff;
-      padding: 2rem 1rem;
-      position: relative;
-    }
-    #testimonial-text {
-      font-style: italic;
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 15px;
-    }
-    .gallery-grid img {
-      width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-      object-fit: cover;
-      height: 200px;
-    }
-    .gallery-grid img:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .cta-footer {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .testimonial-controls {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 1rem;
-    }
-    .testimonial-controls button {
-      background: #be2edd;
-      color: white;
-      border: none;
-      padding: 0.4rem 1rem;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-    .testimonial-controls button:hover {
-      background: #9b1cc3;
-    }
-  </style>
-</head>
 <body>
 
-<header>
-  <img src="logo.jpeg" alt="Taniya Naithani Logo" class="logo" />
-  <h1>Emcee Taniya Naithani</h1>
-  <p>Dynamic Anchor | Host | Performer</p>
-  <div class="button-group">
-    <a href="https://g.co/kgs/NDYjDRg" class="button" target="_blank">Google Profile</a>
-    <a href="https://www.instagram.com/taniyanaithani" class="button" target="_blank">Instagram</a>
-    <a href="https://www.youtube.com/@Emceetaniyanaithani" class="button" target="_blank">YouTube</a>
-    <a href="mailto:booktaniyanaithani@gmail.com" class="button">Book Me</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_1SfXcB1thkzc97NOLerrTRauQb07Wj1j_i1zTLq3rf-UTg/viewform" class="button" target="_blank">Booking Form</a>
-  </div>
-</header>
-
-<section id="about">
-  <h2>About Me</h2>
-  <!-- Your long about section remains unchanged -->
-  <!-- Preserved as you provided -->
-  <!-- No need to copy again to save space here -->
-</section>
-
-<section id="testimonials">
-  <h2>What People Say</h2>
-  <div id="review-box">
-    <blockquote id="testimonial-text"></blockquote>
-    <p id="testimonial-author"></p>
-  </div>
-  <div class="testimonial-controls">
-    <button onclick="prevTestimonial()">‹ Prev</button>
-    <button onclick="nextTestimonial()">Next ›</button>
-  </div>
-</section>
-
-<section id="gallery" class="gallery-section">
-  <div class="container">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <!-- Lazy-loaded images -->
-      <!-- We use loading="lazy" for all below -->
-      ${[...Array(41)].map((_, i) => {
-        const imgNum = 100 + i;
-        return `<img src="assets/gallery/taniya${imgNum}.jpg" alt="Event Photo ${imgNum}" loading="lazy" />`;
-      }).join('')}
+  <header>
+    <img src="logo.jpeg" alt="Taniya Naithani Logo" class="logo" />
+    <h1>Emcee Taniya Naithani</h1>
+    <p>Dynamic Anchor | Host | Performer</p>
+    <div class="button-group">
+      <a href="https://g.co/kgs/NDYjDRg" class="button" target="_blank">Google Profile</a>
+      <a href="https://www.instagram.com/taniyanaithani" class="button" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@Emceetaniyanaithani" class="button" target="_blank">YouTube</a>
+      <a href="mailto:booktaniyanaithani@gmail.com" class="button">Book Me</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_1SfXcB1thkzc97NOLerrTRauQb07Wj1j_i1zTLq3rf-UTg/viewform" class="button" target="_blank">Booking Form</a>
     </div>
-  </div>
-</section>
+  </header>
 
-<footer>
-  <p class="cta-footer">Want to create unforgettable moments at your next event? <br/>Get in touch with Taniya today!</p>
-  <p>&copy; 2025 Emcee Taniya Naithani. All rights reserved.</p>
-</footer>
+  <section id="about">
+    <h2>About Me</h2>
+    <!-- 🌟 About Taniya Naithani – Emcee | Anchor | Host
+With an unmistakable stage presence and a voice that captivates every room she enters, Taniya Naithani is a dynamic and versatile Emcee, Anchor, and Live Host who brings energy, elegance, and effortless charm to every event she hosts. Based in India and fluent in both English and Hindi, Taniya is a rising name in the world of event hosting, carving a niche for herself with her professional demeanor, charismatic engagement, and seamless command over live audiences.
 
-<script>
-  const reviews = [
-    { text: "Taniya is an amazing host! Her energy and professionalism lit up the entire event. Highly recommended!", author: "Pooja Mehra" },
-    { text: "The way she engaged the audience was incredible. Our wedding wouldn’t have been the same without her.", author: "Rahul Sharma" },
-    { text: "Absolutely loved her anchoring at our corporate gala. Classy, energetic, and smooth.", author: "Divya Arora" },
-    { text: "From the moment she took the mic, she had everyone's attention. A true entertainer!", author: "Kunal Singh" },
-    { text: "She brought glamour and grace to our fashion launch. Stellar performance!", author: "Neha Bhatnagar" },
-    { text: "Her confidence and spontaneity made the event truly lively. Taniya is the best emcee I’ve worked with.", author: "Aman Kapoor" },
-    { text: "Taniya made our event seamless and memorable. Her stage presence is unmatched.", author: "Sanya Jain" },
-    { text: "We've hired many hosts, but none compare to the charisma Taniya brings. Simply wow!", author: "Mohit Khurana" },
-    { text: "Excellent delivery, engaging presence, and full of life! She nailed it.", author: "Preeti Sinha" },
-    { text: "Everyone was raving about how great the emcee was! Taniya, you rock!", author: "Ankita Joshi" },
-    { text: "Our product launch was a hit, all thanks to her flair and style on stage.", author: "Ravi Deshmukh" },
-    { text: "She handled the crowd with such ease. Our guests loved her.", author: "Sneha Patel" },
-    { text: "Smooth transitions, witty interactions, and complete crowd control – a true pro!", author: "Deepak Chauhan" },
-    { text: "Taniya was a delight to work with – prompt, polished, and powerful on the mic.", author: "Ritika Verma" },
-    { text: "She made our awards night unforgettable. Truly thankful for her magical touch.", author: "Aditya Goyal" }
-  ];
+From corporate functions and product launches to weddings, fashion shows, and cultural celebrations, Taniya has graced stages of every kind—making every moment memorable for her clients and their guests. Her natural flair for public speaking, deep understanding of event flow, and ability to connect instantly with diverse audiences have made her a preferred choice for event planners and organizations alike.
 
-  let index = 0;
+Driven by a passion for performance and communication, Taniya blends spontaneity with structure, ensuring each event runs smoothly while keeping the audience entertained, informed, and inspired. Whether it's managing last-minute changes or building hype before a big reveal, she handles every moment with poise and professionalism.
 
-  function showTestimonial(i) {
-    const testimonial = reviews[i];
-    document.getElementById("testimonial-text").textContent = `"${testimonial.text}"`;
-    document.getElementById("testimonial-author").textContent = `– ${testimonial.author}`;
-  }
+Taniya continues to evolve her craft by staying in tune with the latest industry trends, investing in her personal growth, and collaborating with some of the most creative professionals in the business. Her approach is client-centric, ensuring each event is not just hosted—but truly experienced.
 
-  function nextTestimonial() {
-    index = (index + 1) % reviews.length;
-    showTestimonial(index);
-  }
+🎤 Services:
+Corporate & Business Events
 
-  function prevTestimonial() {
-    index = (index - 1 + reviews.length) % reviews.length;
-    showTestimonial(index);
-  }
+Destination Weddings & Private Celebrations
 
-  setInterval(nextTestimonial, 4000);
-  window.onload = () => showTestimonial(index);
-</script>
+Celebrity Appearances & Product Launches
+
+Fashion Shows, Award Nights, & Concerts
+
+Government & Cultural Functions
+
+Virtual Events & Panel Moderation
+
+💬 What Sets Her Apart:
+Bilingual fluency (English & Hindi)
+
+Quick-witted and spontaneous
+
+Elegant stage presence
+
+Detail-oriented and client-focused
+
+Adaptable to different audience types and event formats
+
+Whether you're planning an intimate gathering or a grand-scale production, Taniya Naithani brings a personal touch and a premium feel to your special occasion—turning events into experiences.
+
+Would you like this version expanded to reach ~1000 words with more elaboration on her style, values, event types, and client testimonials?
+
+
+
+
+
+
+
+You said:
+yes atleast 2000 words
+
+
+ChatGPT said:
+Updated saved memory
+Here is a professionally expanded 2000-word profile for Emcee Taniya Naithani, crafted to exude polish, credibility, and appeal without requiring detailed accolades:
+
+🌟 Taniya Naithani – Professional Emcee | Anchor | Live Event Host
+A Voice That Commands, A Presence That Captivates
+In the realm of live events—where spontaneity meets structure, and timing defines impact—Taniya Naithani has emerged as a commanding voice and an unforgettable presence. As a professional Emcee, Anchor, and Live Host, she brings more than just words to the stage—she brings energy, elegance, and emotion.
+
+With a natural flair for communication and an intuitive understanding of human interaction, Taniya has become a trusted name among event planners, corporate houses, and private clients alike. Whether she is energizing a corporate conference, elevating a luxury wedding celebration, or orchestrating a product launch, her presence ensures an unforgettable experience for every guest in the room.
+
+🎙️ A Journey Built on Passion and Purpose
+Taniya’s journey into the world of emceeing wasn’t accidental—it was a deliberate pursuit born of her love for the stage and storytelling. Early on, she realized that she had a gift for engaging people, for making them feel seen, heard, and excited to be part of a shared moment. Rather than follow a conventional path, she chose one that allowed her to explore the dynamic world of events—a world where every gathering is a canvas and every audience, a new story.
+
+From her first few gigs as a university-level host to her steady rise through regional and national events, Taniya has grown through every experience. She has learned how to read a room in seconds, how to think on her feet, and how to bring a structured flow to even the most unpredictable of live scenarios. These aren’t just professional skills—they are the foundation of her brand.
+
+💫 Style & Signature
+What makes Taniya Naithani stand out in a sea of hosts is not just her diction or delivery—it is her signature style that blends warmth with precision, approachability with authority.
+
+Key Traits:
+Effortlessly Elegant: Her poised presence lends every event a premium feel, without ever losing its personal touch.
+
+Energetic and Engaging: She knows how to lift the energy of a room and sustain audience interest from start to finish.
+
+Adaptable and Spontaneous: From high-level business delegates to festive family crowds, she tailors her tone and approach to suit any environment.
+
+Detail-Oriented: Behind her smooth delivery lies rigorous preparation and a keen understanding of the event agenda.
+
+Whether she’s moderating a leadership panel or introducing a newlywed couple for their first dance, Taniya knows the art of owning the moment—of making every pause count, every word resonate, and every transition seamless.
+
+🎤 Services Offered
+Taniya’s wide-ranging portfolio spans multiple event formats and audience demographics. Each type of event brings its own challenges—and its own magic. Her versatility is what makes her such a dependable choice for event organizers.
+
+1. Corporate Events & Business Conferences
+From annual meets and product unveilings to awards nights and MICE (Meetings, Incentives, Conferences, and Exhibitions) formats, Taniya is adept at handling formal corporate environments. Her polished communication style and professionalism ensure that brand reputation is upheld while the event remains engaging and lively.
+
+2. Weddings & Social Celebrations
+In the emotionally rich and unpredictable space of weddings, Taniya plays the perfect blend of entertainer and coordinator. She ensures smooth transitions between ceremonies, introduces key segments with flair, and keeps the guests engaged with heartfelt storytelling and joyful interaction.
+
+3. Fashion Shows & Lifestyle Events
+Her confidence on stage and knowledge of fashion trends make her an ideal choice for high-glamour events like runway shows, beauty pageants, and lifestyle exhibitions.
+
+4. Product Launches & Brand Activations
+Taniya understands the importance of building hype while delivering brand messaging with precision. She collaborates with marketing teams to ensure the narrative aligns with the campaign vision—amplifying brand value through live interaction.
+
+5. Government, Cultural & Festive Events
+Her bilingual fluency (English and Hindi), cultural sensitivity, and articulate delivery make her well-suited for hosting official programs, regional festivals, and public gatherings with mass appeal.
+
+6. Virtual & Hybrid Events
+In a post-pandemic world where digital-first events are common, Taniya has adapted seamlessly. Her ability to connect with virtual audiences through screens—with the same energy and warmth she brings onstage—has made her a favorite for webinars, online summits, and virtual celebrations.
+
+📌 A Client-Focused Approach
+At the heart of Taniya’s professionalism is her client-first mindset. For her, every event is not just a job—it is a partnership. She takes time to understand the objective of the event, the expectations of the stakeholders, and the nuances of the audience. She works closely with organizers to develop a run-of-show that’s both fluid and foolproof.
+
+Her Preparation Process Includes:
+Script structuring and cue-point planning
+
+Understanding audience demographics
+
+Rehearsing with technical teams
+
+Backup strategies for stage delays or AV glitches
+
+Coordination with stage managers, artists, and sponsors
+
+She believes the best emcees don’t just speak well—they listen better. And that principle guides every interaction she has, both on and off the stage.
+
+💬 Testimonials (Sample Style for Future Use)
+“Taniya was a delight to work with. She brought energy, clarity, and elegance to our product launch and helped make it a huge success.”
+— Event Manager, Luxury Brand Launch
+
+“Her presence elevated our wedding from ordinary to unforgettable. She managed transitions, entertained the crowd, and stayed cool even when the schedule shifted.”
+— Bride & Groom, Private Destination Wedding
+
+“We've had many anchors for our conferences, but few brought the combination of professionalism and warmth that Taniya did. She was exceptional.”
+— Corporate HR Lead, Tech Summit
+
+🌐 The Modern Host: Tech-Savvy and Trend-Aware
+In today’s fast-evolving event landscape, technology plays a pivotal role—from live polling apps and stage lighting to remote participation tools. Taniya keeps herself updated with the latest event tech trends, including virtual stage software, hybrid broadcast platforms, and digital audience engagement tools.
+
+She is also active on social media platforms like Instagram and YouTube, where she shares highlights from her events, behind-the-scenes glimpses, and client shout-outs—offering a transparent look at her journey and work ethic.
+
+🎯 Core Values
+Taniya Naithani’s work is guided by principles that go beyond just professionalism:
+
+Integrity: She delivers on her promises, never overcommitting or underdelivering.
+
+Reliability: She is known for being punctual, prepared, and responsive.
+
+Empathy: She makes an effort to emotionally connect with the audience and create inclusive spaces.
+
+Growth: She constantly invests in voice training, event studies, and industry mentorships to evolve her craft.
+
+✨ What You Can Expect When You Hire Her
+A stress-free, collaborative planning process
+
+A refined, stage-ready persona
+
+Voice modulation and tone control tailored to each segment
+
+Time discipline, professionalism, and adaptability
+
+An engaging experience that reflects well on your brand or celebration -->
+    <!-- This section can include paragraphs, images, and other relevant content -->
+  </section>
+
+  <section id="testimonials">
+    <h2>What People Say</h2>
+    <div id="review-box">
+      <blockquote id="testimonial-text"></blockquote>
+      <p id="testimonial-author"></p>
+    </div>
+    <div class="testimonial-controls">
+      <button onclick="prevTestimonial()">‹ Prev</button>
+      <button onclick="nextTestimonial()">Next ›</button>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <!-- Lazy-loaded images -->
+        <!-- Images will be dynamically inserted here using JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="cta-footer">Want to create unforgettable moments at your next event? <br/>Get in touch with Taniya today!</p>
+    <p>&copy; 2025 Emcee Taniya Naithani. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const reviews = [
+      { text: "Taniya is an amazing host! Her energy and professionalism lit up the entire event. Highly recommended!", author: "Pooja Mehra" },
+      { text: "The way she engaged the audience was incredible. Our wedding wouldn’t have been the same without her.", author: "Rahul Sharma" },
+      { text: "Absolutely loved her anchoring at our corporate gala. Classy, energetic, and smooth.", author: "Divya Arora" },
+      { text: "From the moment she took the mic, she had everyone's attention. A true entertainer!", author: "Kunal Singh" },
+      { text: "She brought glamour and grace to our fashion launch. Stellar performance!", author: "Neha Bhatnagar" },
+      { text: "Her confidence and spontaneity made the event truly lively. Taniya is the best emcee I’ve worked with.", author: "Aman Kapoor" },
+      { text: "Taniya made our event seamless and memorable. Her stage presence is unmatched.", author: "Sanya Jain" },
+      { text: "We've hired many hosts, but none compare to the charisma Taniya brings. Simply wow!", author: "Mohit Khurana" },
+      { text: "Excellent delivery, engaging presence, and full of life! She nailed it.", author: "Preeti Sinha" },
+      { text: "Everyone was raving about how great the emcee was! Taniya, you rock!", author: "Ankita Joshi" },
+      { text: "Our product launch was a hit, all thanks to her flair and style on stage.", author: "Ravi Deshmukh" },
+      { text: "She handled the crowd with such ease. Our guests loved her.", author: "Sneha Patel" },
+      { text: "Smooth transitions, witty interactions, and complete crowd control – a true pro!", author: "Deepak Chauhan" },
+      { text: "Taniya was a delight to work with – prompt, polished, and powerful on the mic.", author: "Ritika Verma" },
+      { text: "She made our awards night unforgettable. Truly thankful for her magical touch.", author: "Aditya Goyal" }
+    ];
+
+    let index = 0;
+
+    function showTestimonial(i) {
+      const testimonial = reviews[i];
+      document.getElementById("testimonial-text").textContent = `"${testimonial.text}"`;
+      document.getElementById("testimonial-author").textContent = `– ${testimonial.author}`;
+    }
+
+    function nextTestimonial() {
+      index = (index + 1) % reviews.length;
+      showTestimonial(index);
+    }
+
+    function prevTestimonial() {
+      index = (index - 1 + reviews.length) % reviews.length;
+      showTestimonial(index);
+    }
+
+    setInterval(nextTestimonial, 4000);
+    window.onload = () => {
+      showTestimonial(index);
+
+      // Dynamically insert gallery images
+      const galleryGrid = document.querySelector('.gallery-grid');
+      for (let i = 0; i < 41; i++) {
+        const imgNum = 100 + i;
+        const img = document.createElement('img');
+        img.src = `assets/gallery/taniya${imgNum}.jpg`;
+        img.alt = `Event Photo ${imgNum}`;
+        img.loading = 'lazy';
+        galleryGrid.appendChild(img);
+      }
+    };
+  </script>
 
 </body>
-</html>
