@@ -1,97 +1,150 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
-
+/* Fonts and base */
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #0e0e0e;
-  color: #f5f5f5;
+  background-color: #fdfcfa;
+  color: #333;
+  line-height: 1.7;
 }
 
+/* Header styling */
 header {
-  background: #1a1a1a;
+  background: linear-gradient(120deg, #3e2f5b, #ae8ccf);
+  color: white;
   text-align: center;
-  padding: 2em 1em;
-  border-bottom: 1px solid #444;
+  padding: 50px 20px 40px;
 }
 
-header img {
-  width: 120px;
+header .logo {
+  width: 100px;
   border-radius: 50%;
-  margin-bottom: 1em;
+  border: 3px solid white;
+  margin-bottom: 15px;
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5em;
-  color: gold;
-  margin: 0.2em 0;
+  font-size: 2.8rem;
+  margin: 0;
 }
 
 header p {
-  font-size: 1.1em;
-  color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
 }
 
 .button-group {
-  margin-top: 1.5em;
-}
-
-a.button {
-  background-color: gold;
-  color: #000;
-  padding: 0.7em 1.5em;
-  margin: 0.5em;
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: background 0.3s;
-}
-
-a.button:hover {
-  background-color: #e6c200;
-}
-
-section {
-  padding: 2em 10%;
-  border-bottom: 1px solid #333;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  color: gold;
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-
-.gallery-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;
+  gap: 12px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #5e3a85;
+  border: 2px solid #5e3a85;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #5e3a85;
+  color: #fff;
+}
+
+/* Section styling */
+section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+  color: #5e3a85;
+}
+
+#about p {
+  max-width: 900px;
+  margin: 0 auto 20px;
+  font-size: 1.05rem;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #f1ebf7;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#testimonial-text {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #3d2d5a;
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+#testimonial-author {
+  font-weight: bold;
+  color: #5e3a85;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Gallery */
+#gallery {
+  padding-bottom: 60px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 0 20px;
 }
 
 .gallery-grid img {
-  width: 30%;
-  max-width: 300px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-grid img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 2em;
-  font-size: 0.9em;
-  color: #999;
-  background-color: #111;
+  background-color: #3e2f5b;
+  color: white;
+  padding: 20px;
+  font-size: 0.95rem;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-  .gallery-grid img {
-    width: 100%;
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #testimonial-text {
+    font-size: 1.1rem;
   }
 }
