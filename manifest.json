@@ -1,2 +1,21 @@
-assets/icons/icon-192.png
-assets/icons/icon-512.png
+{
+  "name": "Emcee Taniya Naithani",
+  "short_name": "Taniya",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfcfa",
+  "theme_color": "#5e3a85",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
