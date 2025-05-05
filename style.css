@@ -91,6 +91,9 @@ h2 {
   color: #3d2d5a;
   margin-bottom: 10px;
   transition: all 0.5s ease-in-out;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #testimonial-author {
