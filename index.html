@@ -55,34 +55,56 @@
   </div>
 </section>
 
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery-grid">
-    <!-- Auto-generated images from taniya100.jpg to taniya140.jpg -->
-    <!-- Just ensure these files are uploaded to assets/gallery/ -->
-    <!-- You can adjust the loop easily if needed -->
-    <!-- START GALLERY -->
-    <!-- COPY START -->
-    <!-- We'll show 3 per row using CSS -->
-    <!-- Begin Loop -->
-    <!-- You can generate this part with any naming pattern -->
-    <!-- For now, we hardcode them -->
-    <!-- Sample of 41 images -->
-    <!-- You can automate this with a generator -->
-    <!-- Below is raw HTML -->
-    <!-- You may also load dynamically later -->
-    <!-- BEGIN -->
-    <!-- prettier-ignore -->
-    <!-- Batch generated -->
-    <!-- Insert more if you have beyond 140 -->
-    <!-- Loop -->
-    <!-- prettier-ignore -->
-    ${[...Array(41).keys()].map(i => {
-      const num = 100 + i;
-      return `<img src="assets/gallery/taniya${num}.jpg" alt="Event Photo ${num}" />`;
-    }).join('\n')}
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <!-- Image list from taniya100.jpg to taniya140.jpg -->
+      <img src="assets/gallery/taniya100.jpg" alt="Event Photo 100" />
+      <img src="assets/gallery/taniya101.jpg" alt="Event Photo 101" />
+      <img src="assets/gallery/taniya102.jpg" alt="Event Photo 102" />
+      <img src="assets/gallery/taniya103.jpg" alt="Event Photo 103" />
+      <img src="assets/gallery/taniya104.jpg" alt="Event Photo 104" />
+      <img src="assets/gallery/taniya105.jpg" alt="Event Photo 105" />
+      <img src="assets/gallery/taniya106.jpg" alt="Event Photo 106" />
+      <img src="assets/gallery/taniya107.jpg" alt="Event Photo 107" />
+      <img src="assets/gallery/taniya108.jpg" alt="Event Photo 108" />
+      <img src="assets/gallery/taniya109.jpg" alt="Event Photo 109" />
+      <img src="assets/gallery/taniya110.jpg" alt="Event Photo 110" />
+      <img src="assets/gallery/taniya111.jpg" alt="Event Photo 111" />
+      <img src="assets/gallery/taniya112.jpg" alt="Event Photo 112" />
+      <img src="assets/gallery/taniya113.jpg" alt="Event Photo 113" />
+      <img src="assets/gallery/taniya114.jpg" alt="Event Photo 114" />
+      <img src="assets/gallery/taniya115.jpg" alt="Event Photo 115" />
+      <img src="assets/gallery/taniya116.jpg" alt="Event Photo 116" />
+      <img src="assets/gallery/taniya117.jpg" alt="Event Photo 117" />
+      <img src="assets/gallery/taniya118.jpg" alt="Event Photo 118" />
+      <img src="assets/gallery/taniya119.jpg" alt="Event Photo 119" />
+      <img src="assets/gallery/taniya120.jpg" alt="Event Photo 120" />
+      <img src="assets/gallery/taniya121.jpg" alt="Event Photo 121" />
+      <img src="assets/gallery/taniya122.jpg" alt="Event Photo 122" />
+      <img src="assets/gallery/taniya123.jpg" alt="Event Photo 123" />
+      <img src="assets/gallery/taniya124.jpg" alt="Event Photo 124" />
+      <img src="assets/gallery/taniya125.jpg" alt="Event Photo 125" />
+      <img src="assets/gallery/taniya126.jpg" alt="Event Photo 126" />
+      <img src="assets/gallery/taniya127.jpg" alt="Event Photo 127" />
+      <img src="assets/gallery/taniya128.jpg" alt="Event Photo 128" />
+      <img src="assets/gallery/taniya129.jpg" alt="Event Photo 129" />
+      <img src="assets/gallery/taniya130.jpg" alt="Event Photo 130" />
+      <img src="assets/gallery/taniya131.jpg" alt="Event Photo 131" />
+      <img src="assets/gallery/taniya132.jpg" alt="Event Photo 132" />
+      <img src="assets/gallery/taniya133.jpg" alt="Event Photo 133" />
+      <img src="assets/gallery/taniya134.jpg" alt="Event Photo 134" />
+      <img src="assets/gallery/taniya135.jpg" alt="Event Photo 135" />
+      <img src="assets/gallery/taniya136.jpg" alt="Event Photo 136" />
+      <img src="assets/gallery/taniya137.jpg" alt="Event Photo 137" />
+      <img src="assets/gallery/taniya138.jpg" alt="Event Photo 138" />
+      <img src="assets/gallery/taniya139.jpg" alt="Event Photo 139" />
+      <img src="assets/gallery/taniya140.jpg" alt="Event Photo 140" />
+    </div>
   </div>
 </section>
+
 
 <footer>
   <p>&copy; 2025 Emcee Taniya Naithani. All rights reserved.</p>
@@ -90,18 +112,79 @@
 
 <script>
   const reviews = [
-    "“Absolutely phenomenal host! Taniya brought so much energy to our wedding.” – Priya Mehra",
-    "“The best emcee we’ve worked with. Our corporate launch was a hit!” – Rahul S.",
-    "“Taniya is professional, stylish, and incredibly engaging.” – Sneha Kapoor",
-    "“From start to end, Taniya kept the audience hooked. Incredible performer.” – Manish Rawat",
-    "“She was the star of our event. Everyone asked for her contact!” – Pooja Taneja"
+    {
+      text: "Taniya is an amazing host! Her energy and professionalism lit up the entire event. Highly recommended!",
+      author: "Pooja Mehra"
+    },
+    {
+      text: "The way she engaged the audience was incredible. Our wedding wouldn’t have been the same without her.",
+      author: "Rahul Sharma"
+    },
+    {
+      text: "Absolutely loved her anchoring at our corporate gala. Classy, energetic, and smooth.",
+      author: "Divya Arora"
+    },
+    {
+      text: "From the moment she took the mic, she had everyone's attention. A true entertainer!",
+      author: "Kunal Singh"
+    },
+    {
+      text: "She brought glamour and grace to our fashion launch. Stellar performance!",
+      author: "Neha Bhatnagar"
+    },
+    {
+      text: "Her confidence and spontaneity made the event truly lively. Taniya is the best emcee I’ve worked with.",
+      author: "Aman Kapoor"
+    },
+    {
+      text: "Taniya made our event seamless and memorable. Her stage presence is unmatched.",
+      author: "Sanya Jain"
+    },
+    {
+      text: "We've hired many hosts, but none compare to the charisma Taniya brings. Simply wow!",
+      author: "Mohit Khurana"
+    },
+    {
+      text: "Excellent delivery, engaging presence, and full of life! She nailed it.",
+      author: "Preeti Sinha"
+    },
+    {
+      text: "Everyone was raving about how great the emcee was! Taniya, you rock!",
+      author: "Ankita Joshi"
+    },
+    {
+      text: "Our product launch was a hit, all thanks to her flair and style on stage.",
+      author: "Ravi Deshmukh"
+    },
+    {
+      text: "She handled the crowd with such ease. Our guests loved her.",
+      author: "Sneha Patel"
+    },
+    {
+      text: "Smooth transitions, witty interactions, and complete crowd control – a true pro!",
+      author: "Deepak Chauhan"
+    },
+    {
+      text: "Taniya was a delight to work with – prompt, polished, and powerful on the mic.",
+      author: "Ritika Verma"
+    },
+    {
+      text: "She made our awards night unforgettable. Truly thankful for her magical touch.",
+      author: "Aditya Goyal"
+    }
   ];
+
   let index = 0;
-  setInterval(() => {
-    document.getElementById("testimonial-text").innerText = reviews[index % reviews.length].split("–")[0].trim();
-    document.getElementById("testimonial-author").innerText = "– " + reviews[index % reviews.length].split("–")[1].trim();
-    index++;
-  }, 4000);
+
+  function showTestimonial() {
+    const testimonial = reviews[index];
+    document.getElementById("testimonial-text").textContent = `"${testimonial.text}"`;
+    document.getElementById("testimonial-author").textContent = `– ${testimonial.author}`;
+    index = (index + 1) % reviews.length;
+  }
+
+  setInterval(showTestimonial, 4000); // rotates every 4 seconds
+  window.onload = showTestimonial;
 </script>
 
 </body>
