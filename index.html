@@ -128,6 +128,16 @@
     </ul>
   </section>
 
+  <script>
+  const galleryContainer = document.getElementById('gallery-container');
+  for (let i = 100; i <= 140; i++) {
+    const img = document.createElement('img');
+    img.src = `assets/gallery/taniya${i}.jpg`;
+    img.alt = `Gallery ${i}`;
+    galleryContainer.appendChild(img);
+  }
+</script>
+
   <section id="gallery" class="gallery">
   <h2>Gallery</h2>
   <div class="gallery-container" id="gallery-container">
